@@ -1,0 +1,174 @@
+:root {
+  --color-blue: #00154f;
+  --color-orange: #f4af1b;
+  --color-pele: #f2bc94;
+  --color-blue2: #172a5f;
+  --color-red: #a21202;
+  --color-red2: #cc1400;
+  --color-green: #00662a;
+  --color-green2: #019d42;
+}
+
+body {
+  font-family: "verdana";
+  background-color: var(--color-blue);
+  color: var(--color-orange);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4rem;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.content--add-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+#input-nova-tarefa,
+#input-nova-data,
+#btn-nova-tarefa {
+  border: none;
+  font-size: 1rem;
+  outline: none;
+  padding: 1rem;
+}
+
+.add-tarefa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1000px;
+  gap: 20px;
+}
+
+#input-nova-tarefa {
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+#input-nova-data {
+  width: 10rem;
+  border-radius: 1rem;
+}
+
+#btn-nova-tarefa {
+  background-color: var(--color-orange);
+  color: var(--color-blue);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#btn-nova-tarefa:hover {
+  background-color: var(--color-pele);
+}
+
+#to-do-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 0;
+}
+
+#to-do-list li {
+  display: flex;
+  gap: 20px;
+  list-style-type: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  align-items: center;
+}
+
+#to-do-list li:hover {
+  background-color: var(--color-pele);
+  color: var(--color-blue);
+  transition: .4s;
+  border-radius: 1rem;
+  padding-left: 5px;
+
+
+}
+
+#btn-ok {
+  border: none;
+  background-color: var(--color-blue2);
+  color: var(--color-orange);
+  padding: .4rem .8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#btn-ok:hover {
+  background-color: var(--color-blue);
+}
+
+
+#btn-apagar {
+  border: none;
+  background-color: var(--color-red);
+  color: var(--color-orange);
+  padding: .4rem .8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#btn-apagar:hover {
+  background-color: var(--color-red2);
+}
+
+
+#btn-editar {
+  border: none;
+  background-color: var(--color-green);
+  color: var(--color-orange);
+  padding: .4rem .8rem;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#btn-editar:hover {
+  background-color: var(--color-green2);
+}
+
+
+.grifar {
+  text-decoration: line-through;
+}
+
+.a1 {
+  width: 850px;
+  text-align: start;
+}
+
+#a2 {
+  text-align: center;
+  vertical-align: center;
+}
